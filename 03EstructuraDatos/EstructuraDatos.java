@@ -90,6 +90,41 @@ class EstructuraDatos{
             case 3:
                 
                 break;
+            
+            case 4:
+                
+                break;
+            
+            case 5:
+                System.out.println("Bienvenido a esta hermosa tiendita linda y kawaii");
+                System.out.println("Por favor ingrese cuantos elementos va a comprar");
+                int elementosproducto = 0;
+                elementosproducto = entrada.nextInt();
+                if( elementosproducto > 0){
+                    for(int i = 1; i<= elementosproducto; i++){
+                        System.out.println("Ingresa el nombre del producto");
+                        String nombreproducto="";
+                        nombreproducto = entrada.next();
+                        System.out.println("Ingrese el precio");
+                        float precio=0.0;
+                        precio = entrada.nextFloat();
+                        float resultado;
+                        System.out.println("Ingrese la cantidad de producto");
+                        int cantidad=0;
+                        precio = entrada.nextInt();
+                        resultado = precio * cantidad;
+                        float compra=0;
+                        compra = resultado + compra;
+
+
+                    }
+                    System.out.println("El total de la compra es: " + compra);
+
+                }else{
+                    System.out.println("ingrese solo cantidades positivas");
+                }
+                
+                break;
         
             default:
                 break;
