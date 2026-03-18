@@ -9,12 +9,12 @@ de algortimia
 5.- Desarrollar una tienda para agregar productos y precios
 6.- Desarrollar un programa para calcular el area y perimetro de 5 diferentes figuras
 7.- Desarrollar una tabla ahoria a ver de que se me ocurre
-8.- Desarrollar un programa para calcular el factorial con recursividad
-9.- Vamos hacer dibujitos wiiiii
+8.- Desarrollar un programa para calcular el factorial 
+9.- Vamos hacer dibujitos wiiiii   triangulo equilatero     rombo
 10.- Desarrollar una figura hueca
-11.- Realizar algunos patrones
+11.- 
 12.- Realizar un diamante
-13.- Desarrollar una calculadora basica + - * / 
+13.- Desarrollar una calculadora basica + - * / para n numeros
 */
 
 import java.util.Scanner;
@@ -25,6 +25,7 @@ class EstructuraDatos{
         //aqui van las variables
         int opcion;
         char letrapararepetir;
+        float compra=0;
 
         //aqui van los objetos
         Scanner entrada = new Scanner(System.in);
@@ -106,14 +107,14 @@ class EstructuraDatos{
                         String nombreproducto="";
                         nombreproducto = entrada.next();
                         System.out.println("Ingrese el precio");
-                        float precio=0.0;
+                        float precio=0;
                         precio = entrada.nextFloat();
                         float resultado;
                         System.out.println("Ingrese la cantidad de producto");
                         int cantidad=0;
                         precio = entrada.nextInt();
                         resultado = precio * cantidad;
-                        float compra=0;
+                        
                         compra = resultado + compra;
 
 
@@ -124,6 +125,41 @@ class EstructuraDatos{
                     System.out.println("ingrese solo cantidades positivas");
                 }
                 
+                break;
+            case 6:
+                break;
+            
+            case 7:
+                //quiero dejarles una tabla de multiplicar
+                //deberan de darle formato y titulos a cada columna
+                for(int n = 1; n <= 10; n++){
+                    System.out.println(
+                        "| " + n + "  | " + (n*10 + " " + (n*100) +" " + (n*1000)));
+                }
+
+            case 8:
+                break;
+            case 9:
+                //vamos a realizar un cuadrado magico
+                System.out.println("Vamos a realizar el dibujo de un cuadrado magico");
+                System.out.println("Ingrese el tamaño del cuadrado");
+                int n1= entrada.nextInt();
+
+                if(n1 >= 1 && n1 <=20){
+                    //se imprime
+                    for(int i = 1; i <= n1; i++){
+                        //recorro las columnas
+                        //System.out.print(" 1 ");
+                        for(int j = 1; j <= n1; j++){
+                            System.out.print(" * ");
+
+                        }
+                        System.out.println("");
+                    }
+
+                }else{
+                    System.out.println("Por favor solo ingrese valores entre el 1 y el 20");
+                }
                 break;
         
             default:
