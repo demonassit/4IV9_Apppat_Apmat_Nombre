@@ -26,7 +26,7 @@ public class ConexionBD {
     */
     
     private static final String URL = 
-            "jdbc:mysql//localhost:3306/productos_sql";
+            "jdbc:mysql://localhost:3306/productos_sql?serverTimezone=America/Mexico_City";
     private static final String USUARIO = "root";
     private static final String PASSWORD = "n0m3l0";
     
